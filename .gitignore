@@ -135,3 +135,4 @@ monitors/go/go-host-monitor.code-workspace
 
 cs-server/QuokkaServer/bin/
 cs-server/QuokkaServer/obj/
+node_modules
