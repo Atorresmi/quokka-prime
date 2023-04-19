@@ -26,7 +26,7 @@ from db_apis import get_capture, get_portscan, get_traceroute
 from db_apis import record_portscan_data, record_traceroute_data, record_capture_data, record_snoop_data
 from worker_apis import start_portscan, start_traceroute, start_capture, start_snoop
 
-limiter = Limiter(quokka_app, key_func=get_remote_address)
+limiter = Limiter(quokka_app, key_func=get_remote_address) # type: ignore
 
 # Start background DB hourly task
 db_hourly_task = DbHourlyTask()
